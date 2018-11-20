@@ -1,0 +1,438 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SignalStrengthRecorder:ADC0831-2CH U1
+U 1 1 5BE90B87
+P 2120 1560
+F 0 "U1" H 2095 2085 50  0000 C CNN
+F 1 "ADC0831-2CH" H 2095 1994 50  0000 C CNN
+F 2 "" H 2070 1560 50  0001 C CNN
+F 3 "" H 2070 1560 50  0001 C CNN
+	1    2120 1560
+	1    0    0    -1  
+$EndComp
+$Comp
+L SignalStrengthRecorder:ADC0831-2CH U2
+U 1 1 5BE91146
+P 2120 2810
+F 0 "U2" H 2095 3335 50  0000 C CNN
+F 1 "ADC0831-2CH" H 2095 3244 50  0000 C CNN
+F 2 "" H 2070 2810 50  0001 C CNN
+F 3 "" H 2070 2810 50  0001 C CNN
+	1    2120 2810
+	1    0    0    -1  
+$EndComp
+$Comp
+L SignalStrengthRecorder:ADC0831-2CH U3
+U 1 1 5BE912F6
+P 2120 4060
+F 0 "U3" H 2095 4585 50  0000 C CNN
+F 1 "ADC0831-2CH" H 2095 4494 50  0000 C CNN
+F 2 "" H 2070 4060 50  0001 C CNN
+F 3 "" H 2070 4060 50  0001 C CNN
+	1    2120 4060
+	1    0    0    -1  
+$EndComp
+$Comp
+L SignalStrengthRecorder:ADC0831-2CH U4
+U 1 1 5BE9139E
+P 2110 5310
+F 0 "U4" H 2085 5835 50  0000 C CNN
+F 1 "ADC0831-2CH" H 2085 5744 50  0000 C CNN
+F 2 "" H 2060 5310 50  0001 C CNN
+F 3 "" H 2060 5310 50  0001 C CNN
+	1    2110 5310
+	1    0    0    -1  
+$EndComp
+$Comp
+L SignalStrengthRecorder:ADC0831-2CH U5
+U 1 1 5BE91E96
+P 2110 6490
+F 0 "U5" H 2085 7015 50  0000 C CNN
+F 1 "ADC0831-2CH" H 2085 6924 50  0000 C CNN
+F 2 "" H 2060 6490 50  0001 C CNN
+F 3 "" H 2060 6490 50  0001 C CNN
+	1    2110 6490
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1620 1860 1540 1860
+Wire Wire Line
+	1540 1860 1540 1960
+$Comp
+L power:GND #PWR?
+U 1 1 5BE92192
+P 1540 1960
+F 0 "#PWR?" H 1540 1710 50  0001 C CNN
+F 1 "GND" H 1545 1787 50  0000 C CNN
+F 2 "" H 1540 1960 50  0001 C CNN
+F 3 "" H 1540 1960 50  0001 C CNN
+	1    1540 1960
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1620 1660 1540 1660
+Wire Wire Line
+	1540 1660 1540 1860
+Connection ~ 1540 1860
+Wire Wire Line
+	1620 3110 1540 3110
+Wire Wire Line
+	1540 3110 1540 3210
+$Comp
+L power:GND #PWR?
+U 1 1 5BE9222C
+P 1540 3210
+F 0 "#PWR?" H 1540 2960 50  0001 C CNN
+F 1 "GND" H 1545 3037 50  0000 C CNN
+F 2 "" H 1540 3210 50  0001 C CNN
+F 3 "" H 1540 3210 50  0001 C CNN
+	1    1540 3210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1620 2910 1540 2910
+Wire Wire Line
+	1540 2910 1540 3110
+Connection ~ 1540 3110
+Wire Wire Line
+	1610 4360 1530 4360
+Wire Wire Line
+	1530 4360 1530 4460
+$Comp
+L power:GND #PWR?
+U 1 1 5BE922A3
+P 1530 4460
+F 0 "#PWR?" H 1530 4210 50  0001 C CNN
+F 1 "GND" H 1535 4287 50  0000 C CNN
+F 2 "" H 1530 4460 50  0001 C CNN
+F 3 "" H 1530 4460 50  0001 C CNN
+	1    1530 4460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1610 4160 1530 4160
+Wire Wire Line
+	1530 4160 1530 4360
+Connection ~ 1530 4360
+Wire Wire Line
+	1610 5610 1530 5610
+Wire Wire Line
+	1530 5610 1530 5710
+$Comp
+L power:GND #PWR?
+U 1 1 5BE922AE
+P 1530 5710
+F 0 "#PWR?" H 1530 5460 50  0001 C CNN
+F 1 "GND" H 1535 5537 50  0000 C CNN
+F 2 "" H 1530 5710 50  0001 C CNN
+F 3 "" H 1530 5710 50  0001 C CNN
+	1    1530 5710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1610 5410 1530 5410
+Wire Wire Line
+	1530 5410 1530 5610
+Connection ~ 1530 5610
+Wire Wire Line
+	1610 6790 1530 6790
+Wire Wire Line
+	1530 6790 1530 6890
+$Comp
+L power:GND #PWR?
+U 1 1 5BE92431
+P 1530 6890
+F 0 "#PWR?" H 1530 6640 50  0001 C CNN
+F 1 "GND" H 1535 6717 50  0000 C CNN
+F 2 "" H 1530 6890 50  0001 C CNN
+F 3 "" H 1530 6890 50  0001 C CNN
+	1    1530 6890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1610 6590 1530 6590
+Wire Wire Line
+	1530 6590 1530 6790
+Connection ~ 1530 6790
+Text GLabel 1530 1460 0    50   Input ~ 0
+Radio1in
+Wire Wire Line
+	1620 1460 1530 1460
+Text GLabel 1520 6390 0    50   Input ~ 0
+Radio5in
+Wire Wire Line
+	1610 6390 1520 6390
+Text GLabel 1530 2710 0    50   Input ~ 0
+Radio2in
+Wire Wire Line
+	1620 2710 1530 2710
+Text GLabel 1530 3960 0    50   Input ~ 0
+Radio3in
+Wire Wire Line
+	1620 3960 1530 3960
+Text GLabel 1520 5210 0    50   Input ~ 0
+Radio4in
+Wire Wire Line
+	1610 5210 1520 5210
+Text GLabel 900  1040 1    50   Input ~ 0
+CS
+Wire Wire Line
+	1620 1260 900  1260
+Wire Wire Line
+	900  1260 900  1040
+Wire Wire Line
+	900  1260 900  2510
+Wire Wire Line
+	900  2510 1620 2510
+Connection ~ 900  1260
+Wire Wire Line
+	900  2510 900  3760
+Wire Wire Line
+	900  3760 1620 3760
+Connection ~ 900  2510
+Wire Wire Line
+	900  3760 900  5010
+Wire Wire Line
+	900  5010 1610 5010
+Connection ~ 900  3760
+Wire Wire Line
+	900  5010 900  6190
+Wire Wire Line
+	900  6190 1610 6190
+Connection ~ 900  5010
+Text GLabel 2740 1030 1    50   Input ~ 0
+Vcc
+Wire Wire Line
+	2570 1260 2740 1260
+Wire Wire Line
+	2740 1260 2740 1030
+Wire Wire Line
+	2570 1860 2740 1860
+Wire Wire Line
+	2740 1860 2740 1260
+Connection ~ 2740 1260
+Wire Wire Line
+	2740 1860 2740 2510
+Wire Wire Line
+	2740 2510 2570 2510
+Connection ~ 2740 1860
+Wire Wire Line
+	2570 3110 2740 3110
+Wire Wire Line
+	2740 3110 2740 2510
+Connection ~ 2740 2510
+Wire Wire Line
+	2740 3110 2740 3760
+Wire Wire Line
+	2570 3760 2740 3760
+Connection ~ 2740 3110
+Wire Wire Line
+	2570 4360 2740 4360
+Wire Wire Line
+	2740 4360 2740 3760
+Connection ~ 2740 3760
+Wire Wire Line
+	2740 4360 2740 5010
+Wire Wire Line
+	2740 5010 2560 5010
+Connection ~ 2740 4360
+Wire Wire Line
+	2740 5010 2740 5610
+Wire Wire Line
+	2740 5610 2560 5610
+Connection ~ 2740 5010
+Wire Wire Line
+	2740 5610 2740 6190
+Wire Wire Line
+	2740 6190 2560 6190
+Connection ~ 2740 5610
+Wire Wire Line
+	2740 6190 2740 6790
+Wire Wire Line
+	2740 6790 2560 6790
+Connection ~ 2740 6190
+Text GLabel 2950 1030 1    50   Input ~ 0
+CLK
+Wire Wire Line
+	2950 1030 2950 1460
+Wire Wire Line
+	2950 1460 2570 1460
+Wire Wire Line
+	2950 1460 2950 2710
+Wire Wire Line
+	2950 2710 2570 2710
+Connection ~ 2950 1460
+Wire Wire Line
+	2950 2710 2950 3960
+Wire Wire Line
+	2950 3960 2570 3960
+Connection ~ 2950 2710
+Wire Wire Line
+	2950 3960 2950 5210
+Wire Wire Line
+	2950 5210 2560 5210
+Connection ~ 2950 3960
+Wire Wire Line
+	2950 5210 2950 6390
+Wire Wire Line
+	2950 6390 2560 6390
+Connection ~ 2950 5210
+Text GLabel 3130 1660 2    50   Input ~ 0
+DO1
+Wire Wire Line
+	2570 1660 3130 1660
+Text GLabel 3130 2910 2    50   Input ~ 0
+DO2
+Wire Wire Line
+	2570 2910 3130 2910
+Text GLabel 3120 4160 2    50   Input ~ 0
+DO3
+Wire Wire Line
+	2560 4160 2570 4160
+Text GLabel 3120 5410 2    50   Input ~ 0
+DO4
+Wire Wire Line
+	2560 5410 3120 5410
+Connection ~ 2570 4160
+Wire Wire Line
+	2570 4160 3120 4160
+Text GLabel 3120 6590 2    50   Input ~ 0
+DO5
+Wire Wire Line
+	2560 6590 3120 6590
+$Comp
+L SignalStrengthRecorder:HFE8 K?
+U 1 1 5BEA9978
+P 5390 2010
+F 0 "K?" H 5350 1750 50  0000 L CNN
+F 1 "HFE8" H 5300 2270 50  0000 L CNN
+F 2 "" H 5390 2010 50  0001 C CNN
+F 3 "" H 5390 2010 50  0001 C CNN
+	1    5390 2010
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_ECB Q?
+U 1 1 5BEA9CF5
+P 6260 2840
+F 0 "Q?" H 6450 2794 50  0000 L CNN
+F 1 "Q_NPN_ECB" H 6450 2885 50  0000 L CNN
+F 2 "" H 6460 2940 50  0001 C CNN
+F 3 "~" H 6260 2840 50  0001 C CNN
+	1    6260 2840
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_ECB Q?
+U 1 1 5BEA9E34
+P 5640 3840
+F 0 "Q?" H 5830 3794 50  0000 L CNN
+F 1 "Q_NPN_ECB" H 5830 3885 50  0000 L CNN
+F 2 "" H 5840 3940 50  0001 C CNN
+F 3 "~" H 5640 3840 50  0001 C CNN
+	1    5640 3840
+	-1   0    0    1   
+$EndComp
+Text GLabel 5140 1540 1    50   Input ~ 0
++5V
+Text GLabel 5240 1540 1    50   Input ~ 0
++5V
+Wire Wire Line
+	5140 1540 5140 1610
+Wire Wire Line
+	5240 1540 5240 1610
+Text GLabel 5140 2510 3    50   Input ~ 0
+Vcc
+Wire Wire Line
+	5140 2410 5140 2510
+Text GLabel 6990 2840 2    50   Input ~ 0
+On
+Text GLabel 6350 3840 2    50   Input ~ 0
+Off
+Wire Wire Line
+	6460 2840 6570 2840
+Wire Wire Line
+	5840 3840 5930 3840
+$Comp
+L power:GND #PWR?
+U 1 1 5BEB70BE
+P 6160 3110
+F 0 "#PWR?" H 6160 2860 50  0001 C CNN
+F 1 "GND" H 6165 2937 50  0000 C CNN
+F 2 "" H 6160 3110 50  0001 C CNN
+F 3 "" H 6160 3110 50  0001 C CNN
+	1    6160 3110
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BEB7121
+P 5540 4100
+F 0 "#PWR?" H 5540 3850 50  0001 C CNN
+F 1 "GND" H 5545 3927 50  0000 C CNN
+F 2 "" H 5540 4100 50  0001 C CNN
+F 3 "" H 5540 4100 50  0001 C CNN
+	1    5540 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5540 4040 5540 4100
+Wire Wire Line
+	6160 3040 6160 3110
+Text GLabel 5540 1540 1    50   Input ~ 0
++5V
+Text GLabel 5640 1540 1    50   Input ~ 0
++5V
+Wire Wire Line
+	5540 1540 5540 1610
+Wire Wire Line
+	5640 1540 5640 1610
+Wire Wire Line
+	5640 2410 5640 2570
+Wire Wire Line
+	5640 2570 6160 2570
+Wire Wire Line
+	6160 2570 6160 2640
+$Comp
+L Device:R R?
+U 1 1 5BEC8CE8
+P 6720 2840
+F 0 "R?" V 6513 2840 50  0000 C CNN
+F 1 "R" V 6604 2840 50  0000 C CNN
+F 2 "" V 6650 2840 50  0001 C CNN
+F 3 "~" H 6720 2840 50  0001 C CNN
+	1    6720 2840
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5BEC8FEB
+P 6080 3840
+F 0 "R?" V 5873 3840 50  0000 C CNN
+F 1 "R" V 5964 3840 50  0000 C CNN
+F 2 "" V 6010 3840 50  0001 C CNN
+F 3 "~" H 6080 3840 50  0001 C CNN
+	1    6080 3840
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5540 2410 5540 3640
+Wire Wire Line
+	6870 2840 6990 2840
+Wire Wire Line
+	6350 3840 6230 3840
+$EndSCHEMATC
