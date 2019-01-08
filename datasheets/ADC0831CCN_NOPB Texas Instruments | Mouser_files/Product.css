@@ -1,0 +1,602 @@
+﻿/* Modules, standard and collapsable */
+.panel-default > .panel-heading {
+  background: #e0e4e9; }
+  .panel-default > .panel-heading .panel-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333; }
+
+.panel-heading .accordion-toggle h4:after {
+  font-family: 'MouserIcons';
+  content: "\f006";
+  float: right;
+  color: #0070BB; }
+
+.panel-heading .accordion-toggle.collapsed h4:after {
+  content: "\f007"; }
+
+.panel-default > .panel-accordion-heading:hover {
+  background: #e7f3f9; }
+
+.panel-default > .panel-heading > a:hover, .panel-default > .panel-heading > a:focus {
+  text-decoration: none; }
+
+.panel-grey {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9; }
+
+.panel-grey-border {
+  border-color: #d9d9d9; }
+
+.image-div {
+  margin: 3px 5px 3px 0;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  background-color: #FFFFFF;
+  border: 1px dashed #CCC;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  border-radius: 3px; }
+
+span.noimage {
+  color: #666;
+  font-size: 0.7em;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2em; }
+
+/* DIV TABLES */
+.div-table .row {
+  padding: 0px 5px 0px 5px;
+  top: 3px;
+  position: relative; }
+
+.div-table-head {
+  border-bottom: 3px solid #d9d9d9;
+  background: #e0e4e9;
+  font-weight: bold;
+  color: #7f7f7f; }
+  .div-table-head .row {
+    padding-top: 5px; }
+
+.div-table-sub-head {
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px solid #d9d9d9; }
+
+.div-table-body {
+  /*border-top: 3px solid $med-grey;
+    border-bottom: 3px solid $med-grey;
+    & .row + div {
+        border-top: 1px solid $med-grey;
+    }*/ }
+
+.div-table-row {
+  border-bottom: 1px solid #d9d9d9; }
+
+.div-table-foot {
+  border-top: 3px solid #d9d9d9; }
+
+.div-table-col-highlight div {
+  background: #f5f5f5;
+  padding-right: 10px;
+  position: relative;
+  bottom: 3px;
+  right: 5px; }
+
+.div-table-col-highlight-head {
+  position: relative;
+  right: 15px; }
+
+.div-table-border-left {
+  border-left: 1px solid #d9d9d9; }
+
+.div-table-row-pad-botttom5 .div-table-row {
+  padding-bottom: 5px; }
+
+.input-group {
+  z-index: 0; }
+
+.ic-no-image {
+  height: 150px;
+  /*max-width: 150px;*/
+  background: #fff url(/images/no-image.gif) 0 0 no-repeat;
+  background-position: center; }
+
+/* makes the spinner bigger, container larger so no scroll bars, and overrides the mb.zoomify.css background */
+.processing .fa-spinner {
+  font-size: 4em; }
+
+#cboxLoadedContent {
+  height: 120px; }
+
+#loader.processing {
+  background: none; }
+
+/* Add To Compare button styling */
+.compare-input {
+  color: #333333;
+  background: #ffffff;
+  text-align: left; }
+
+.link-seperator {
+  color: #d9d9d9;
+  line-height: 2.5em;
+  padding: 0 5px; }
+
+/* Buy input styling */
+.buy-input {
+  color: #333333; }
+
+/* Customer part# input styling */
+.cust-part-num-input {
+  -ms-border-radius: 4px !important;
+  border-radius: 4px !important;
+  color: #333333; }
+
+.uli-hcpns {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+  z-index: 3;
+  margin-left: -3px; }
+
+/* Fixes custPartNum ddl style */
+#SelectedCustomerPartNumberValue {
+  -ms-border-radius: 4px !important;
+  border-radius: 4px !important; }
+
+/* breadcrumb formatting */
+.breadcrumb {
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 0;
+  padding: 0;
+  font-weight: bold; }
+
+.breadcrumb > li + li::before {
+  content: none; }
+
+.bc-chevron {
+  padding: 0 5px; }
+
+.bc-no-link {
+  color: #7f7f7f; }
+
+.cad-icon {
+  height: 28px; }
+
+#cadInfoMessage {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* Removes the pre styling bootstrap applies for More Information section */
+.pdp-pre-overide {
+  color: #333333;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; }
+
+/* Centers the fa-angle-right in the row */
+.pdp-newest-prods-row {
+  display: flex; }
+
+.pdp-newest-prods-arrow {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.pdp-product-newest-prod-header {
+  background-color: #004A85 !important; }
+
+.pdp-product-newest-prod-header-title {
+  color: #ffffff; }
+
+.pdp-product-newest-prod-header-mfr {
+  color: #f5a960; }
+
+@media (min-width: 992px) {
+  /* sets the max height of the right column for md+ screens so we don't get column whitespace */
+  .responsive #pdpRightColumn {
+    max-height: 1px; }
+  /* sets text-right for the "See An Error?" text for md+ screens */
+  .responsive #feedback_error {
+    text-align: right; } }
+
+.responsive-desktop #pdpRightColumn {
+  max-height: 1px; }
+
+.responsive-desktop #feedback_error {
+  text-align: right; }
+
+/* Show All - Show Less buttons for the documents section */
+.docs-buttons {
+  background: #ffffff;
+  color: #0070BB;
+  z-index: 4;
+  position: relative;
+  cursor: pointer;
+  font-weight: bold; }
+
+.docs-buttons:hover {
+  text-decoration: none;
+  color: #0070BB; }
+
+.docs-show-text {
+  padding: 0 15px 0 15px; }
+
+.pdp-docs-heading {
+  font-style: italic;
+  top: 7px; }
+
+/* Keeps the fa-external-link icon next to the text  */
+.quickViewSpan {
+  white-space: nowrap; }
+
+.pdp-ass-prod-img {
+  max-width: 80px;
+  max-height: 40px; }
+
+.pdp-also-bought-img {
+  max-width: 80px;
+  max-height: 40px; }
+
+.pdp-newest-products-img {
+  max-width: 80px; }
+
+.pdp-product-alternates-img {
+  max-width: 80px; }
+
+/* h-tag overides */
+.pdp-newest-products-link-text {
+  font-size: 13px;
+  color: #333333; }
+
+.pdp-newest-products-cat-sup-link-text {
+  font-size: 13px; }
+
+.pdp-newest-products-link-text-bold {
+  font-size: 13px;
+  font-weight: bold; }
+
+/* SM and up media queries */
+@media (min-width: 768px) {
+  .responsive .col-sm-text-right {
+    text-align: right; }
+  .responsive .bs-vert-line-sm-up {
+    border-left: 1px solid #d9d9d9; }
+  .responsive .pdp-left-imgs {
+    border-right: 1px solid #d9d9d9;
+    position: relative;
+    left: 1px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .responsive .pdp-card-desc {
+    padding-top: 15px;
+    padding-bottom: 15px; } }
+
+.responsive-desktop .col-sm-text-right {
+  text-align: right; }
+
+.responsive-desktop .bs-vert-line-sm-up {
+  border-left: 1px solid #d9d9d9; }
+
+.responsive-desktop .pdp-left-imgs {
+  border-right: 1px solid #d9d9d9;
+  position: relative;
+  left: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.responsive-desktop .pdp-card-desc {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/* Keeps the fa-external-link icon next to the text */
+.seeAnErrorSpan {
+  white-space: nowrap;
+  cursor: pointer; }
+
+/*.has-gradient {
+    position: relative;
+    z-index: 9999;
+    margin-top: -35px; 
+    padding-top: 40px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%); /* FF3.6-15 
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 
+    background: linear-gradient(to bottom, rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 57%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 
+}*/
+.pdp-left-imgs {
+  /*
+    Can't do this; causes issues if the image is taller than the info on the right
+    padding-top: 15px;
+    padding-bottom: 15px;*/ }
+
+.pdp-product-card {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+#product-desc .row {
+  padding-top: 3px;
+  padding-bottom: 3px; }
+
+.bs-border-top {
+  border-top: 1px solid #d9d9d9; }
+
+.thru-line {
+  border-top: 1px solid #d9d9d9;
+  display: block;
+  position: relative;
+  top: 10px; }
+
+.underline {
+  border-top: 1px solid #d9d9d9;
+  display: block;
+  position: relative;
+  padding: 4px;
+  top: 4px; }
+
+.underline-15 {
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding: 15px;
+  top: 15px; }
+
+/* TODO: Need a solution to overide bootstrap so line goes full-width */
+.full-underline {
+  border-top: 1px solid #d9d9d9;
+  width: calc(100% + 30px);
+  display: block;
+  position: relative;
+  padding: 4px;
+  top: 4px;
+  right: 15px; }
+
+.underline-heavy {
+  border-top: 3px solid #d9d9d9;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  top: 10px; }
+
+/*.full-underline-15 {
+    border-top: 1px solid $med-grey;
+    height: 1px;
+    width: calc(100% + 30px);
+    display: block;
+    position: relative;
+	top: 15px;
+    padding: 15px;
+    right: 15px;
+}*/
+.full-underline-10 {
+  border-top: 1px solid #d9d9d9;
+  width: calc(100% + 30px);
+  display: block;
+  position: relative;
+  top: 10px;
+  padding: 10px;
+  right: 15px; }
+
+/* Cross-reference message - TODO: Need finalized color */
+.cross-ref-message {
+  color: #dc730a;
+  font-style: italic; }
+
+/* Restriction, lifecycle, etc. icon colors - TODO: Need finalized colors */
+.restrictionIconRed {
+  color: #990000; }
+
+.restrictionIconGray {
+  color: #7f7f7f; }
+
+.lifecycleIconRed {
+  color: #990000; }
+
+.lifecycleIconBlue {
+  color: #0070BB; }
+
+.lifecycleIconOrange {
+  color: #dc730a; }
+
+.lifecycleIconGreen {
+  color: #588a10; }
+
+.rohsIconGreen {
+  color: #588a10; }
+
+.fa-m-rohs {
+  padding-bottom: 5px; }
+
+.field-validation-error {
+  font-weight: bold;
+  color: #990000; }
+
+/* Specs Messaging */
+.pdp-specs-msgs-top {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.pdp-specs-msgs-bottom {
+  padding-left: 15px; }
+
+.pdp-specs-msgs-top > .specs-success-msg, .pdp-specs-msgs-top > .specs-danger-msg {
+  margin-bottom: 15px; }
+
+.pdp-specs-msgs-bottom > div, .pdp-specs-msgs-bottom > div {
+  margin-top: 15px;
+  margin-bottom: 0px; }
+
+.inShowSimilarProducts {
+  background-color: inherit;
+  color: #0070BB;
+  border: 0px none;
+  font-weight: bold; }
+
+.inShowSimilarProducts:hover {
+  text-decoration: underline;
+  color: #0099FF;
+  cursor: pointer; }
+
+.pdp-product-card-mfr-name h2 {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: normal; }
+
+.pdp-product-card-mfr-h1 {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: normal; }
+
+#h4PricingTitle {
+  font-weight: bold;
+  font-size: 18px; }
+
+.cust-part-input-grp, .buy-input-grp {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.popularSearchHorizontal {
+  font-size: 11px;
+  line-height: 16px; }
+
+.popular-searches-label label {
+  color: #7f7f7f;
+  font-weight: normal; }
+
+#pdpBottomRow {
+  padding-bottom: 15px; }
+
+.pdp-product-alternates-h2 {
+  margin-top: 2px;
+  font-size: 13px; }
+
+.pdp-product-alternates-btn-row {
+  padding-top: 10px; }
+
+/* QuickView - Copied from base-lite */
+.quickview #quickview_close {
+  color: #fff;
+  background: none repeat scroll 0 0 #999999;
+  cursor: pointer;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 3px;
+  width: 16px; }
+
+#TB_window.quickview {
+  border: 4px solid gray; }
+
+.qv_restrictions a.thickbox {
+  display: block;
+  margin-bottom: 4px; }
+
+.QuickViewMxImg {
+  max-height: 140px;
+  max-width: 140px; }
+
+.packChoiceStyle {
+  overflow: hidden; }
+
+.more-images {
+  display: inline-block;
+  background: #fff url(/images/icon-more-images.png) 0 0 no-repeat;
+  width: 61px;
+  height: 20px;
+  margin-top: 13px; }
+
+.zoom-images {
+  margin-top: 13px;
+  text-align: left !important; }
+
+.pdp-ship-free-msg {
+  color: #333333; }
+  .pdp-ship-free-msg .dark-med-orange {
+    color: #dc730a; }
+
+#clockdiv .dark-med-orange {
+  color: #dc730a; }
+
+#divCountdownClockDialog {
+  margin: 5px; }
+  #divCountdownClockDialog ul {
+    list-style-type: none;
+    line-height: 1.4em;
+    padding: 0px;
+    margin: 10px; }
+
+#collapseMoreInfo img {
+  max-width: 100px; }
+
+#collapseMoreInfo h2 {
+  font-size: 15px;
+  margin-top: 0px; }
+
+.ui-widget, .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px; }
+
+#TB_title {
+  display: none; }
+
+#spnAddToCompareText {
+  font-weight: normal; }
+
+.compare-input-lbl {
+  margin-bottom: 0px; }
+
+.pdp-pricing-delays {
+  color: #990000; }
+
+.DigitalDeliverLinkIcon:hover {
+  text-decoration: none; }
+
+.form-control {
+  border: 1px solid #d9d9d9; }
+
+.input-group-addon {
+  border: 1px solid #d9d9d9; }
+
+.buy-input.input-validation-error {
+  background-color: #ffffff; }
+
+textarea {
+  resize: none; }
+
+/* css rules for Punchout Product Detail page*/
+.punchout #factoryPackQtyPopupLink {
+  color: #333333; }
+  .punchout #factoryPackQtyPopupLink:hover {
+    text-decoration: none;
+    color: #333333; }
+
+.punchout .spec-rohs {
+  color: #333333; }
+  .punchout .spec-rohs:hover {
+    text-decoration: none;
+    color: #333333; }
+
+.punchout .addthis_toolbox, .punchout .pdp-ship-free-msg {
+  display: none; }
+
+@media print {
+  /* Hide newest products module when printing in firefox only */
+  @-moz-document url-prefix() {
+    #pdpNewestProds {
+      display: none !important; } } }
+
+/* Feedback Styling */
+.panel-title {
+  font-size: 18px; }
