@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name SignalStrengthRecorder)(type Legacy)(uri /home/tux/Desktop/SignalStrengthRecorder/KiCAD/SignalStrengthRecorder/SignalStrengthRecorder.lib)(options "")(descr ""))
+  (lib (name SignalStrengthRecorder-rescue)(type Legacy)(uri ${KIPRJMOD}/SignalStrengthRecorder-rescue.lib)(options "")(descr ""))
 )
