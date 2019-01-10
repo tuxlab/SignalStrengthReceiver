@@ -1,0 +1,167 @@
+% file: connections.txt  -- documenting connections among other components
+
+% connections list
+%   first column is a complete list of connection points
+%   second column is another point in the first column that this point connects to
+%     or else the vertical bar "|" character indicating that another point in the first column connects here
+%   third column, when second column contains vertical bar, is the other point that connects to this one
+%   Parenthesized column, way to the right in the Raspberry Pi header section,
+%     indicates Raspberry Pi header pin assignments in an old software version
+
+% wires incoming to the board from radios (5 radios, 3 wires in each connector)
+%   r5volts              ad5p2
+%   r5active             |         r5activeresistora
+%   r5reference          rpipin06
+
+%   r4volts              ad4p2
+%   r4active             |         r4activeresistora
+%   r4reference          rpipin06
+
+%   r3volts              ad3p2
+%   r3active             |         r3activeresistora
+%   r3reference          rpipin06
+
+%   r2volts              ad2p2
+%   r2active             |         r2activeresistora
+%   r2reference          rpipin06
+
+%   r1volts              ad1p2
+%   r1active             |         r1activeresistora
+%   r1reference          rpipin06
+
+% wires coming to the board from the power supply (one A/D power connector with 2 wires)
+%   power5v              relayp5v
+%   powergnd             rpipin06
+
+% 8 pins on each of 5 A/D converter IC chips
+%   ad5p1                rpipin11
+%   ad5p2                |         r5volts
+%   ad5p3                rpipin06
+%   ad5p4                rpipin06
+
+%   ad4p1                rpipin11
+%   ad4p2                |         r4volts
+%   ad4p3                rpipin06
+%   ad4p4                rpipin06
+
+%   ad3p1                rpipin11
+%   ad3p2                |         r3volts
+%   ad3p3                rpipin06
+%   ad3p4                rpipin06
+
+%   ad2p1                rpipin11
+%   ad2p2                |         r2volts
+%   ad2p3                rpipin06
+%   ad2p4                rpipin06
+
+%   ad1p1                rpipin11
+%   ad1p2                |         r1volts
+%   ad1p3                rpipin06
+%   ad1p4                rpipin06
+
+%   ad5p8                relayadv
+%   ad5p7                rpipin12
+%   ad5p6                rpipin29
+%   ad5p5                relayadv
+
+%   ad4p8                relayadv
+%   ad4p7                rpipin12
+%   ad4p6                rpipin07
+%   ad4p5                relayadv
+
+%   ad3p8                relayadv
+%   ad3p7                rpipin12
+%   ad3p6                rpipin05
+%   ad3p5                relayadv
+
+%   ad2p8                relayadv
+%   ad2p7                rpipin12
+%   ad2p6                rpipin03
+%   ad2p5                relayadv
+
+%   ad1p8                relayadv
+%   ad1p7                rpipin12
+%   ad1p6                rpipin37
+%   ad1p5                relayadv
+
+% pins on the relay
+%   relayadv             |         ad1p8 ad1p5 ad2p8 ad3p5 ad3p8 ad4p5 ad4p8 ad5p5 ad5p8
+%   relayp5v             |         power5v
+%   relayoff             |         offemitter
+%   relayon              |         onemmitter
+%   relayb2              rpipin02
+%   relayb1              rpipin02
+
+% leads on each of two npn transistors driving the relay
+%   offcollector         rpipin06
+%   offemitter           relayoff
+%   offbase              offnpnbaseresistorn
+
+%   oncollector          rpipin06
+%   onemitter            relayon
+%   onbase               onnpnbaseresistorn
+
+% leads on each of five resistors for the A/D converters
+%   r1activeresistora    r1active rpipin08
+%   r1activeresistorg    rpipin06
+
+%   r2activeresistora    r2active rpipin10
+%   r2activeresistorg    rpipin06
+
+%   r3activeresistora    r3active rpipin26
+%   r3activeresistorg    rpipin06
+
+%   r4activeresistora    r4active rpipin24
+%   r4activeresistorg    rpipin06
+
+%   r5activeresistora    r5active rpipin36
+%   r5activeresistorg    rpipin06
+
+% leads on each of two resistors for the transistor drivers for the relay
+%   onnpnbaseresistorn   |         onbase
+%   onnpnbaseresistorp   rpipin21
+
+%   offnpnbaseresistorn  |         offbase
+%   offnpnbaseresistorp  rpipin23
+
+% pins on the header connecting to the Raspberry Pi
+%   rpipin01             unused
+%   rpipin02             |         relayb1 relayb2                   (old pgm data 2 y)
+%   rpipin03             |         ad2p6                             (old pgm data 3 z)
+%   rpipin04             unused                                      (old pgm data 4 m)
+%   rpipin05             |         ad3p6
+%   rpipin06             |         oncollector offcollector r?activeresistorg ad?p3 ad?p4
+%   rpipin07             |         ad4p6                             (old pgm progio 3)
+%   rpipin08             |         r1activeresistora r1active        (old pgm progio 4)
+%   rpipin09             unused                                      (old pgm ADC 5v on)
+%   rpipin10             |         r2activeresistora r2active
+%   rpipin11             |         ad1p1 ad2p1 ad3p1 ad4p1 ad5p1     (old pgm ADC 5v off)
+%   rpipin12             |         ad1p7 ad2p7 ad3p7 ad4p7 ad5p7
+%   rpipin13             unused
+%   rpipin14             unused                                      (old pgm progio 1)
+%   rpipin15             unused                                      (old pgm progio 2)
+%   rpipin16             unused
+%   rpipin17             unused                                      (old pgm cs)
+%   rpipin18             unused                                      (old pgm clk)
+%   rpipin19             unused
+%   rpipin20             unused
+%   rpipin21             |         onnpnbaseresistorp
+%   rpipin22             unused                                      (old pgm LED green pgm ready)
+%   rpipin23             |         offnpnbaseresistorp               (old pgm LED pgm running)
+%   rpipin24             |         r4activeresistora r4active        (old pgm turn pgm on/off)
+%   rpipin25             unused                                      (old pgm quit pgm)
+%   rpipin26             |         r3activeresistora r3active
+%   rpipin27             unused                                      (old pgm data 1 x)
+%   rpipin28             unused
+%   rpipin29             |         ad5p6
+%   rpipin30             unused
+%   rpipin31             unused
+%   rpipin32             unused
+%   rpipin33             unused
+%   rpipin34             unused
+%   rpipin35             unused
+%   rpipin36             |         r5activeresistora r5active
+%   rpipin37             |         ad1p6
+%   rpipin38             unused
+%   rpipin39             unused
+%   rpipin40             unused

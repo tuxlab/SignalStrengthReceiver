@@ -1,0 +1,142 @@
+%  file: rpiheader04.lat  -- providing 40 connections to the raspberry pi (to be included in diag??.lat)
+    \draw
+              (33,31) node[right] {1}                                 % rpi pin 1
+                      to  [short,o-] node[] (rpi pin 1) {} (32,31)
+
+              (35,31) node[right]    {2}                              % rpi pin 2
+                      to  [short,             o- ]         (35,30.5)
+                      to  [short,- ] node[] (rpi pin 2) {} (32,30.5)
+
+              (33,30) node[right]    {3}                              % rpi pin 3
+                      to  [short,o-] node[] (rpi pin 3) {} (32,30)
+
+              (35,30) node[right]    {4}                              % rpi pin 4
+                      to  [short,             o- ]  (35,29.5)
+                      to  [short,- ] node[] (rpi pin 4) {} (32,29.5)
+
+              (33,29) node[right]    {5}                              % rpi pin 5
+                      to  [short,o-] node[] (rpi pin 5) {} (32,29)
+
+              (35,29) node[right]    {6}                              % rpi pin 6
+                      to  [short,             o- ]  (35,28.5)
+                      to  [short,- ] node[] (rpi pin 6) {} (32,28.5)
+
+              (33,28) node[right]    {7}                              % rpi pin 7
+                      to  [short,o-] node[] (rpi pin 7) {} (32,28)
+
+              (35,28) node[right]    {8}                              % rpi pin 8
+                      to  [short,             o- ]  (35,27.5)
+                      to  [short,- ] node[] (rpi pin 8) {} (32,27.5)
+
+              (33,27) node[right]    {9}                              % rpi pin 9
+                      to  [short,o-] node[] (rpi pin 9) {} (32,27)
+
+              (35,27) node[right]   {10}                              % rpi pin 10
+                      to  [short,             o- ]  (35,26.5)
+                      to  [short,- ] node[] (rpi pin 10) {} (32,26.5)
+
+              (33,26) node[right]   {11}                              % rpi pin 11
+                      to  [short,o-] node[] (rpi pin 11) {} (32,26)
+
+              (35,26) node[right]   {12}                              % rpi pin 12
+                      to  [short,             o- ]  (35,25.5)
+                      to  [short,- ] node[] (rpi pin 12) {} (32,25.5)
+
+              (33,25) node[right]   {13}                              % rpi pin 13
+                      to  [short,o-] node[] (rpi pin 13) {} (32,25)
+
+              (35,25) node[right]   {14}                              % rpi pin 14
+                      to  [short,             o- ]  (35,24.5)
+                      to  [short,- ] node[] (rpi pin 14) {} (32,24.5)
+
+              (33,24) node[right]   {15}                              % rpi pin 15
+                      to  [short,o-] node[] (rpi pin 15) {} (32,24)
+
+              (35,24) node[right]   {16}                              % rpi pin 16
+                      to  [short,             o- ]  (35,23.5)
+                      to  [short,- ] node[] (rpi pin 16) {} (32,23.5)
+
+              (33,23) node[right]   {17}                              % rpi pin 17
+                      to  [short,o-] node[] (rpi pin 17) {} (32,23)
+
+              (35,23) node[right]   {18}                              % rpi pin 18
+                      to  [short,             o- ]  (35,22.5)
+                      to  [short,- ] node[] (rpi pin 18) {} (32,22.5)
+
+              (33,22) node[right]   {19}                              % rpi pin 19
+                      to  [short,o-] node[] (rpi pin 19) {} (32,22)
+
+              (35,22) node[right]   {20}                              % rpi pin 20
+                      to  [short,             o- ]  (35,21.5)
+                      to  [short,- ] node[] (rpi pin 20) {} (32,21.5)
+
+              (33,21) node[right] {21}                                % rpi pin 21
+                      to  [short,o-] node[] (rpi pin 21) {} (32,21)
+
+              (35,21) node[right]   {22}                              % rpi pin 22
+                      to  [short,             o- ]  (35,20.5)
+                      to  [short,- ] node[] (rpi pin 22) {} (32,20.5)
+
+              (33,20) node[right] {23}                                % rpi pin 23
+                      to  [short,o-] node[] (rpi pin 23) {} (32,20)
+
+              (35,20) node[right]   {24}                              % rpi pin 24
+                      to  [short,             o- ]  (35,19.5)
+                      to  [short,- ] node[] (rpi pin 24) {} (32,19.5)
+
+              (33,19) node[right]   {25}                              % rpi pin 25
+                      to  [short,o-] node[] (rpi pin 25) {} (32,19)
+
+              (35,19) node[right]   {26}                              % rpi pin 26
+                      to  [short,             o- ]  (35,18.5)
+                      to  [short,- ] node[] (rpi pin 26) {} (32,18.5)
+
+              (33,18) node[right]   {27}                              % rpi pin 27
+                      to  [short,o-] node[] (rpi pin 27) {} (32,18)
+
+              (35,18) node[right]   {28}                              % rpi pin 28
+                      to  [short,             o- ]  (35,17.5)
+                      to  [short,- ] node[] (rpi pin 28) {} (32,17.5)
+
+              (33,17) node[right]   {29}                              % rpi pin 29
+                      to  [short,o-] node[] (rpi pin 29) {} (32,17)
+
+              (35,17) node[right]   {30}                              % rpi pin 30
+                      to  [short,             o- ]  (35,16.5)
+                      to  [short,- ] node[] (rpi pin 30) {} (32,16.5)
+
+              (33,16) node[right]   {31}                              % rpi pin 31
+                      to  [short,o-] node[] (rpi pin 31) {} (32,16)
+
+              (35,16) node[right]   {32}                              % rpi pin 32
+                      to  [short,             o- ]  (35,15.5)
+                      to  [short,- ] node[] (rpi pin 32) {} (32,15.5)
+
+              (33,15) node[right]   {33}                              % rpi pin 33
+                      to  [short,o-] node[] (rpi pin 33) {} (32,15)
+
+              (35,15) node[right]   {34}                              % rpi pin 34
+                      to  [short,             o- ]  (35,14.5)
+                      to  [short,- ] node[] (rpi pin 34) {} (32,14.5)
+
+              (33,14) node[right]   {35}                              % rpi pin 35
+                      to  [short,o-] node[] (rpi pin 35) {} (32,14)
+
+              (35,14) node[right]   {36}                              % rpi pin 36
+                      to  [short,             o- ]  (35,13.5)
+                      to  [short,- ] node[] (rpi pin 36) {} (32,13.5)
+
+              (33,13) node[right]   {37}                              % rpi pin 37
+                      to  [short,o-] node[] (rpi pin 37) {} (32,13)
+
+              (35,13) node[right]   {38}                              % rpi pin 38
+                      to  [short,             o- ]  (35,12.5)
+                      to  [short,- ] node[] (rpi pin 38) {} (32,12.5)
+
+              (33,12) node[right]   {39}                              % rpi pin 39
+                      to  [short,o-] node[] (rpi pin 39) {} (32,12)
+
+              (35,12) node[right]   {40}                              % rpi pin 40
+                      to  [short,             o- ]  (35,11.5)
+                      to  [short,- ] node[] (rpi pin 40) {} (32,11.5)
+      ;

@@ -1,0 +1,46 @@
+% file:  diag01.lat  -- from diag00.lat
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\tikzset{background rectangle/.style={fill=olive!20!white}}
+\usepackage{circuitikz}
+\begin{document}\begin{figure}[h!]\begin{center}
+  \begin{circuitikz}[scale=0.5,show background rectangle]\draw
+              (0,33)       node[left]     {5v}                  % radio 5 strength
+                       to  [short,             o- ]  (2,33)
+              (0,32)       node[left]     {5a}                  % radio 5 active
+                       to  [short,             o- ]  (2,32)
+              (0,31)       node[left]     {5g}                  % radio 5 reference
+                       to  [short,             o- ]  (2,31)
+
+              (0,28)       node[left]     {4v}                  % radio 4 strength
+                       to  [short,             o- ]  (2,28)
+              (0,27)       node[left]     {4a}                  % radio 4 active
+                       to  [short,             o- ]  (2,27)
+              (0,26)       node[left]     {4g}                  % radio 4 reference
+                       to  [short,             o- ]  (2,26)
+
+              (0,23)       node[left]     {3v}                  % radio 3 strength
+                       to  [short,             o- ]  (2,23)
+              (0,22)       node[left]     {3a}                  % radio 3 active
+                       to  [short,             o- ]  (2,22)
+              (0,21)       node[left]     {3g}                  % radio 3 reference
+                       to  [short,             o- ]  (2,21)
+
+              (0,18)       node[left]     {2v}                  % radio 2 strength
+                       to  [short,             o- ]  (2,18)
+              (0,17)       node[left]     {2a}                  % radio 2 active
+                       to  [short,             o- ]  (2,17)
+              (0,16)       node[left]     {2g}                  % radio 2 reference
+                       to  [short,             o- ]  (2,16)
+
+              (0,13)       node[left]     {1v}                  % radio 1 strength
+                       to  [short,             o- ]  (2,13)
+              (0,12)       node[left]     {1a}                  % radio 1 active
+                       to  [short,             o- ]  (2,12)
+              (0,11)       node[left]     {1g}                  % radio 1 reference
+                       to  [short,             o- ]  (2,11)
+
+    ;\end{circuitikz}
+  \caption{A/D interface board between radios and RaspberryPi header}
+  \end{center}\end{figure}\end{document}

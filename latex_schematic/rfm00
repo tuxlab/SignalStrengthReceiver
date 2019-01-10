@@ -1,0 +1,46 @@
+#!/usr/bin/perl -w
+#                   file:  rfm00  -- to move circuitikz x coords
+#                      -- to be executed ...
+use strict;                # boilerplate always to use
+use warnings;              # boilerplate always to use
+no warnings 'utf8';        # to get rid of "Wide character warnings in "say ..."
+use 5.12.0;                # so readdir assigns to $_ in a lone while test and to enable say()
+use Carp qw(croak carp);   # better than die(), etc. for errors
+use FileHandle;            # my favorite way to open files
+# use DirHandle;             # my favorite way to read directories
+# use Plack::Request;        # for autoparsing incoming GET parameters, in this case
+# use Tie::YAML;             # in case we want to use YAML for badge-server communications
+# use File::Map qw(map_file sync);  # to memory map files...
+use DateTime;
+use Time::Local;
+# use Emailesque;
+# use Expect::Simple;
+# use Expect;
+# use Term::ReadKey;
+use File::Slurp qw(slurp write_file);
+
+# this is where I usually like to put my subroutine pre-declarations:
+# sub readradiosdb;
+
+# this is where I usually like to put my main program -- but not for PSGI with Plack:
+
+unless((scalar @ARGV)==2) { die "must provide input and output filenames; quitting"; }
+say "got ARGV[0]: $ARGV[0], ARGV[1]: $ARGV[1]";
+my ($ifn,$ofn)=($ARGV[0],$ARGV[1]);
+say "  so... ifn: $ifn, and ofn: $ofn";
+# my $data=slurp $ARGV[0];
+my $data=slurp $ifn;
+
+# do a transformation
+$data=~s/\((\d+),([-.\d]+)\)/"(@{[$1+5]},$2)"/ge;
+
+# file_write $ARGV[1],$data;
+write_file $ofn,$data;
+
+# this is where I usually like to put my subroutines (functions),
+#   having pre-declared them above after the "use... statements":
+
+1;  # the normal boilerplate isn't used for PSGI protocol to get the app return value instead
+
+__END__
+END { exit; }

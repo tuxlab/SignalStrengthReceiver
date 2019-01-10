@@ -1,0 +1,253 @@
+% file: collections01.lat  -- providing connections among other components
+    \draw                                                     % the relay
+      (onemitter)    -- (relayon)
+      (offemitter)   -- (relayoff)
+      (offcollector)                                                             |- (rpipin06)  % (27,28.5)      % (rpipin06)
+      (oncollector)  |- (28,20) node[circ] {}
+      (onbase)       -| (29,16.5) to [resistor,*-*] (29,19.5)
+                     |- node[short] {} (29,20)                                   |- (rpipin23)
+      (offbase)      -| (29,24.5) to [resistor,*-*] (29,21.5)
+                     |- node[short] {} (29,21.5)                                 |- (rpipin21)
+      (a_d_power)    -- (20,7)
+      (relayadv)     |- (15,33)                                                                  % a2d1 8
+      (relayb1)      -- (relayb2) node[circ] {} -- (27,1)                        |- (rpipin02)
+      (18,31) node[circ,*-] {} -- (15,31)                                                        % a2d1 5
+      (18,28) node[circ,*-] {} -- (15,28)                                                        % a2d2 8
+      (18,26) node[circ,*-] {} -- (15,26)                                                        % a2d2 5
+      (18,23) node[circ,*-] {} -- (15,23)                                                        % a2d3 8
+      (18,21) node[circ,*-] {} -- (15,21)                                                        % a2d3 5
+      (18,18) node[circ,*-] {} -- (15,18)                                                        % a2d4 8
+      (18,16) node[circ,*-] {} -- (15,16)                                                        % a2d4 5
+      (18,13) node[circ,*-] {} -- (15,13)                                                        % a2d5 8
+      (18,11) node[circ,*-] {} -- (15,11)                                                        % a2d5 5
+      (a_d_ground)   -| (5,8) node[] {}         -| (28,28.5) node[circ] {} 
+      (15,32.3)      -- (19,32.3) node[circ] {} --           node[] {} (31,32.3) |- (rpipin12) % a3d1 7
+      (15,27.3)      -- (19,27.3) node[circ] {}
+      (15,22.3)      -- (19,22.3) node[circ] {}
+      (15,17.3)      -- (19,17.3) node[circ] {}
+      (15,12.3)      -| (19,32.3)
+      (9,31.7)       -| (8,11)    node[] {}     -- (9,11)                                        % a2d  4
+      (9,31)         -- (8,31)    node[circ] {}
+                        (8,30)    node[circ] {} -| (28,20)
+      (9,26.7)       -- (8,26.7)  node[circ] {}
+      (9,26)         -- (8,26)    node[circ] {}
+      (9,21.7)       -- (8,21.7)  node[circ] {}
+      (9,21)         -- (8,21)    node[circ] {}
+      (9,16.7)       -- (8,16.7)  node[circ] {}
+      (9,16)         -- (8,16)    node[circ] {}
+      (9,11.7)       -- (8,11.7)  node[circ] {}
+      (9,33)         -| (7,29.3)  node[circ] {} |- (9,13)
+      (7,29.3)       -| node[] {} (25,26)                                        -- (rpipin11)   % ???
+      (7,28)                      node[circ] {} -- (9,28)
+      (7,23)                      node[circ] {} -- (9,23)
+      (7,18)                      node[circ] {} -- (9,18)
+      (2,32.3)       -- (9,32.3)
+      (2,27.3)       -- (9,27.3)
+      (2,22.3)       -- (9,22.3)
+      (2,17.3)       -- (9,17.3)
+      (2,12.3)       -- (9,12.3)
+      (15,31.7)      -| (17,10)   node[] {}     -| (29.5,16) node[] {}           |- (rpipin29)
+      (15,26.7)      -| (22,27.5) node[] {}     -| (29.5,28) node[] {}           -- (rpipin07)
+      (15,21.7)      -| (20.5,28) node[] {}     -| (29,29)   node[] {}           -- (rpipin05)
+      (15,16.7)      -| (20,31)   node[] {}     -| (29,30)   node[] {}           -- (rpipin03)
+      (15,11.7)                                 -| (19.5,13) node[] {}           |- (rpipin37)
+      (2,31)         -- (8,31)
+      (2,26)         -- (8,26)
+      (2,21)         -- (8,21)
+      (2,16)         -- (8,16)
+      (2,11)         -- (8,11)     node[circ] {}
+      (2,30)         to [resistor,*-*] (6,30)   -- (8,30)
+      (2,30)         |- (26.5,34)                 |- (31,11.5)                   |- (rpipin36)
+      (2,25)         to [resistor,*-*] (6,25)   -- (8,25) node[circ] {}
+      (2,25)         |- (22,24)                 |- (31,20.5)                     |- (rpipin24)
+      (2,20)         to [resistor,*-*] (6,20)   -- (8,20) node[circ] {}
+      (2,20)         |- (22,19)                 |- (31,14.3)                     |- (rpipin26)
+      (2,15)         to [resistor,*-*] (6,15)   -- (8,15) node[circ] {}
+      (2,15)         |- (21,14)                 |- (26,21.5)                     |- (rpipin10)
+      (2,10)         to [resistor,*-*] (6,10)   -| (8,11.7)
+      (2,10)         |- (30,9)                                                   |- (rpipin08)
+      ;
+
+    % \draw                           % top of page temporary alignment markers
+    %   (0,35)  node[circ] {0}  -- (0,34)
+    %   (5,35)  node[circ] {5}  -- (5,34)
+    %   (10,35) node[circ] {10} -- (10,34)
+    %   (15,35) node[circ] {15} -- (15,34)
+    %   (20,35) node[circ] {20} -- (20,34)
+    %   (25,35) node[circ] {25} -- (25,34)
+    %   (30,35) node[circ] {30} -- (30,34)
+    %   (35,35) node[circ] {35} -- (35,34)
+    %   ;
+
+% connections list
+%   r5volts              ad5p2
+%   r5active             |         r5activeresistora
+%   r5reference          rpipin06
+
+%   r4volts              ad4p2
+%   r4active             |         r4activeresistora
+%   r4reference          rpipin06
+
+%   r3volts              ad3p2
+%   r3active             |         r3activeresistora
+%   r3reference          rpipin06
+
+%   r2volts              ad2p2
+%   r2active             |         r2activeresistora
+%   r2reference          rpipin06
+
+%   r1volts              ad1p2
+%   r1active             |         r1activeresistora
+%   r1reference          rpipin06
+
+%   power5v              relayp5v
+%   powergnd             rpipin06
+
+%   ad5p1                rpipin11
+%   ad5p2                |         r5volts
+%   ad5p3                rpipin06
+%   ad5p4                rpipin06
+
+%   ad4p1                rpipin11
+%   ad4p2                |         r4volts
+%   ad4p3                rpipin06
+%   ad4p4                rpipin06
+
+%   ad3p1                rpipin11
+%   ad3p2                |         r3volts
+%   ad3p3                rpipin06
+%   ad3p4                rpipin06
+
+%   ad2p1                rpipin11
+%   ad2p2                |         r2volts
+%   ad2p3                rpipin06
+%   ad2p4                rpipin06
+
+%   ad1p1                rpipin11
+%   ad1p2                |         r1volts
+%   ad1p3                rpipin06
+%   ad1p4                rpipin06
+
+%   ad5p8                relayadv
+%   ad5p7                rpipin12
+%   ad5p6                rpipin29
+%   ad5p5                relayadv
+
+%   ad4p8                relayadv
+%   ad4p7                rpipin12
+%   ad4p6                rpipin07
+%   ad4p5                relayadv
+
+%   ad3p8                relayadv
+%   ad3p7                rpipin12
+%   ad3p6                rpipin05
+%   ad3p5                relayadv
+
+%   ad2p8                relayadv
+%   ad2p7                rpipin12
+%   ad2p6                rpipin03
+%   ad2p5                relayadv
+
+%   ad1p8                relayadv
+%   ad1p7                rpipin12
+%   ad1p6                rpipin37
+%   ad1p5                relayadv
+
+%   relayadv             |         ad1p8 ad1p5 ad2p8 ad3p5 ad3p8 ad4p5 ad4p8 ad5p5 ad5p8
+%   relayp5v             |         power5v
+%   relayoff             |         offemitter
+%   relayon              |         onemmitter
+%   relayb2              rpipin02
+%   relayb1              rpipin02
+
+%   offcollector         rpipin06
+%   offemitter           relayoff
+%   offbase              offnpnbaseresistorn
+
+%   oncollector          rpipin06
+%   onemitter            relayon
+%   onbase               onnpnbaseresistorn
+
+%   r1activeresistora    r1active rpipin08
+%   r1activeresistorg    rpipin06
+
+%   r2activeresistora    r2active rpipin10
+%   r2activeresistorg    rpipin06
+
+%   r3activeresistora    r3active rpipin26
+%   r3activeresistorg    rpipin06
+
+%   r4activeresistora    r4active rpipin24
+%   r4activeresistorg    rpipin06
+
+%   r5activeresistora    r5active rpipin36
+%   r5activeresistorg    rpipin06
+
+%   onnpnbaseresistorn   |         onbase
+%   onnpnbaseresistorp   rpipin21
+
+%   offnpnbaseresistorn  |         offbase
+%   offnpnbaseresistorp  rpipin23
+
+%   rpipin01
+%   rpipin02             |         relayb1 relayb2
+%   rpipin03             |         ad2p6
+%   rpipin04
+%   rpipin05             |         ad3p6
+%   rpipin06             |         oncollector offcollector r?activeresistorg ad?p3 ad?p4
+%   rpipin07             |         ad4p6
+%   rpipin08             |         r1activeresistora r1active
+%   rpipin09
+%   rpipin10             |         r2activeresistora r2active
+%   rpipin11             |         ad1p1 ad2p1 ad3p1 ad4p1 ad5p1
+%   rpipin12             |         ad1p7 ad2p7 ad3p7 ad4p7 ad5p7
+%   rpipin13
+%   rpipin14
+%   rpipin15
+%   rpipin16
+%   rpipin17
+%   rpipin18
+%   rpipin19
+%   rpipin20
+%   rpipin21             |         onnpnbaseresistorp
+%   rpipin22
+%   rpipin23             |         offnpnbaseresistorp
+%   rpipin24             |         r4activeresistora r4active
+%   rpipin25
+%   rpipin26             |         r3activeresistora r3active
+%   rpipin27
+%   rpipin28
+%   rpipin29             |         ad5p6
+%   rpipin30
+%   rpipin31
+%   rpipin32
+%   rpipin33
+%   rpipin34
+%   rpipin35
+%   rpipin36             |         r5activeresistora r5active
+%   rpipin37             |         ad1p6
+%   rpipin38
+%   rpipin39
+%   rpipin40
+
+% point names from powerrelay.lat
+%   relayadv,relayp5v,relayon,relayoff,relayb1,relayb2,
+%   onbase,oncollector,onemitter,
+%   offbase,offcollector,offemitter
+% point names from a-d_converters.lat
+%   ad1p1,ad1p2,ad1p3,ad1p4,ad1p8,ad1p7,ad1p6,ad1p5,
+%   ad2p1,ad2p2,ad2p3,ad2p4,ad2p8,ad2p7,ad2p6,ad2p5,
+%   ad3p1,ad3p2,ad3p3,ad3p4,ad3p8,ad3p7,ad3p6,ad3p5,
+%   ad4p1,ad4p2,ad4p3,ad4p4,ad4p8,ad4p7,ad4p6,ad4p5,
+%   ad5p1,ad5p2,ad5p3,ad5p4,ad5p8,ad5p7,ad5p6,ad5p5
+% point names from radios.lat
+%   r5volts,r5active,r5reference,
+%   r4volts,r4active,r4reference,
+%   r3volts,r3active,r3reference,
+%   r2volts,r2active,r2reference,
+%   r1volts,r1active,r1reference
+% point names from rpiheader.lat
+%   rpipin01,rpipin02,rpipin03,rpipin04,rpipin05,rpipin06,rpipin07,rpipin08,rpipin09,rpipin10,
+%   rpipin11,rpipin12,rpipin13,rpipin14,rpipin15,rpipin16,rpipin17,rpipin18,rpipin19,rpipin20,
+%   rpipin21,rpipin22,rpipin23,rpipin24,rpipin25,rpipin26,rpipin27,rpipin28,rpipin29,rpipin30,
+%   rpipin31,rpipin32,rpipin33,rpipin34,rpipin35,rpipin36,rpipin37,rpipin38,rpipin39,rpipin40

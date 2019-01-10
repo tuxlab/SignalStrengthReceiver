@@ -1,0 +1,57 @@
+%  file: a-d_converters01.lat  -- providing A/D converters (to be included in diag??.lat)
+    \draw
+      (10,30.5) -- ++( 4, 0) -- ++( 0, 3) -- ++(-4, 0) -- cycle
+      ( 9,33  ) node[left]  (ad5p1) {1} to [short, -o] ( 9.9,33  )
+      ( 9,32.3) node[left]  (ad5p2) {2} to [short, -o] ( 9.9,32.3)
+      ( 9,31.7) node[left]  (ad5p3) {3} to [short, -o] ( 9.9,31.7)
+      ( 9,31  ) node[left]  (ad5p4) {4} to [short, -o] ( 9.9,31  )
+
+      (15,33  ) node[right] (ad5p8) {8} to [short, -o] (14.1,33  )
+      (15,32.3) node[right] (ad5p7) {7} to [short, -o] (14.1,32.3)
+      (15,31.7) node[right] (ad5p6) {6} to [short, -o] (14.1,31.7)
+      (15,31  ) node[right] (ad5p5) {5} to [short, -o] (14.1,31  )
+
+      (10,25.5) -- ++( 4, 0) -- ++( 0, 3) -- ++(-4, 0) -- cycle
+      ( 9,28  ) node[left]  (ad4p1) {1} to [short, -o] ( 9.9,28  )
+      ( 9,27.3) node[left]  (ad4p2) {2} to [short, -o] ( 9.9,27.3)
+      ( 9,26.7) node[left]  (ad4p3) {3} to [short, -o] ( 9.9,26.7)
+      ( 9,26  ) node[left]  (ad4p4) {4} to [short, -o] ( 9.9,26  )
+
+      (15,28  ) node[right] (ad4p8) {8} to [short, -o] (14.1,28  )
+      (15,27.3) node[right] (ad4p7) {7} to [short, -o] (14.1,27.3)
+      (15,26.7) node[right] (ad4p6) {6} to [short, -o] (14.1,26.7)
+      (15,26  ) node[right] (ad4p5) {5} to [short, -o] (14.1,26  )
+
+      (10,20.5) -- ++( 4, 0) -- ++( 0, 3) -- ++(-4, 0) -- cycle
+      ( 9,23  ) node[left]  (ad3p1) {1} to [short, -o] ( 9.9,23  )
+      ( 9,22.3) node[left]  (ad3p2) {2} to [short, -o] ( 9.9,22.3)
+      ( 9,21.7) node[left]  (ad3p3) {3} to [short, -o] ( 9.9,21.7)
+      ( 9,21  ) node[left]  (ad3p4) {4} to [short, -o] ( 9.9,21  )
+
+      (15,23  ) node[right] (ad3p8) {8} to [short, -o] (14.1,23  )
+      (15,22.3) node[right] (ad3p7) {7} to [short, -o] (14.1,22.3)
+      (15,21.7) node[right] (ad3p6) {6} to [short, -o] (14.1,21.7)
+      (15,21  ) node[right] (ad3p5) {5} to [short, -o] (14.1,21  )
+
+      (10,15.5) -- ++( 4, 0) -- ++( 0, 3) -- ++(-4, 0) -- cycle
+      ( 9,18  ) node[left]  (ad2p1) {1} to [short, -o] ( 9.9,18  )
+      ( 9,17.3) node[left]  (ad2p2) {2} to [short, -o] ( 9.9,17.3)
+      ( 9,16.7) node[left]  (ad2p3) {3} to [short, -o] ( 9.9,16.7)
+      ( 9,16  ) node[left]  (ad2p4) {4} to [short, -o] ( 9.9,16  )
+
+      (15,18  ) node[right] (ad2p8) {8} to [short, -o] (14.1,18  )
+      (15,17.3) node[right] (ad2p7) {7} to [short, -o] (14.1,17.3)
+      (15,16.7) node[right] (ad2p6) {6} to [short, -o] (14.1,16.7)
+      (15,16  ) node[right] (ad2p5) {5} to [short, -o] (14.1,16  )
+
+      (10,10.5) -- ++( 4, 0) -- ++( 0, 3) -- ++(-4, 0) -- cycle
+      ( 9,13  ) node[left]  (ad1p1) {1} to [short, -o] ( 9.9,13  )
+      ( 9,12.3) node[left]  (ad1p2) {2} to [short, -o] ( 9.9,12.3)
+      ( 9,11.7) node[left]  (ad1p3) {3} to [short, -o] ( 9.9,11.7)
+      ( 9,11  ) node[left]  (ad1p4) {4} to [short, -o] ( 9.9,11  )
+
+      (15,13  ) node[right] (ad1p8) {8} to [short, -o] (14.1,13  )
+      (15,12.3) node[right] (ad1p7) {7} to [short, -o] (14.1,12.3)
+      (15,11.7) node[right] (ad1p6) {6} to [short, -o] (14.1,11.7)
+      (15,11  ) node[right] (ad1p5) {5} to [short, -o] (14.1,11  )
+      ;

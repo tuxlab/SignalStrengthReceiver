@@ -1,0 +1,15 @@
+%  file: rpiheader02.lat  -- providing 40 connections to the raspberry pi (to be included in diag??.lat)
+
+%   !!! I haven't been able to make this work yet, nor examples in book !!!
+
+    \draw
+      \def\ODDPIN{1,3,...,39}
+      \foreach \i in \ODDPIN { \pgfmathparse{32-\i}
+        (28,\pgfmathresult) node[right] {\i} % rpi pin \i
+          to [short,o-] node [] (rpi pin \i) {} (27,pgfmathresult) }
+      \def\EVENPIN{2,4,...,40}
+      \foreach \i in \EVENPIN { \pgfmathparse{31.5-\i}
+        (,) node[right] {\i} % rpi pin \i
+          to [short,o-] (30,\pgfmathresult)
+          to [short, -] (27,\pgfmathresult) }
+      ;

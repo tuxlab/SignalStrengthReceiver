@@ -1,0 +1,43 @@
+% file: collections00.lat  -- providing connections among other components
+    \draw                                                     % the relay
+      (onemitter)    -- (relayon)
+      (offemitter)   -- (relayoff)
+      (offcollector) |- (26,28.5) node[circ] (pin6conn) {} -- (rpi pin 6)  % (27,28.5)      % (rpipin06)
+      (oncollector)  |- (26,20) node[] {} -| (pin6conn)
+      (onbase)  -- (28,17.5) [resistor,*-*] -- node[short] {} (30,17.5) |- (rpi pin 23)
+      (offbase) -- (28,25.5) [resistor,*-*] -- node[short] {} (30,25.5) |- (rpi pin 21)
+      ;
+
+    \draw
+%       (,35) node[circ] {}
+      (0,35)  node[circ] {0}  -- (0,34)
+      (5,35)  node[circ] {5}  -- (5,34)
+      (10,35) node[circ] {10} -- (10,34)
+      (15,35) node[circ] {15} -- (15,34)
+      (20,35) node[circ] {20} -- (20,34)
+      (25,35) node[circ] {25} -- (25,34)
+      (30,35) node[circ] {30} -- (30,34)
+      (35,35) node[circ] {35} -- (35,34)
+      ;
+
+% point names from powerrelay.lat
+%   relayadv,relayp5v,relayon,relayoff,relayb1,relayb2,
+%   onbase,oncollector,onemitter,
+%   offbase,offcollector,offemitter
+% point names from a-d_converters.lat
+%   ad1p1,ad1p2,ad1p3,ad1p4,ad1p8,ad1p7,ad1p6,ad1p5,
+%   ad2p1,ad2p2,ad2p3,ad2p4,ad2p8,ad2p7,ad2p6,ad2p5,
+%   ad3p1,ad3p2,ad3p3,ad3p4,ad3p8,ad3p7,ad3p6,ad3p5,
+%   ad4p1,ad4p2,ad4p3,ad4p4,ad4p8,ad4p7,ad4p6,ad4p5,
+%   ad5p1,ad5p2,ad5p3,ad5p4,ad5p8,ad5p7,ad5p6,ad5p5
+% point names from radios.lat
+%   r5volts,r5active,r5reference,
+%   r4volts,r4active,r4reference,
+%   r3volts,r3active,r3reference,
+%   r2volts,r2active,r2reference,
+%   r1volts,r1active,r1reference
+% point names from rpiheader.lat
+%   rpipin01,rpipin02,rpipin03,rpipin04,rpipin05,rpi pin 6,rpipin07,rpipin08,rpipin09,rpipin10,
+%   rpipin11,rpipin12,rpipin13,rpipin14,rpipin15,rpipin16,rpipin17,rpipin18,rpipin19,rpipin20,
+%   rpipin21,rpipin22,rpipin23,rpipin24,rpipin25,rpipin26,rpipin27,rpipin28,rpipin29,rpipin30,
+%   rpipin31,rpipin32,rpipin33,rpipin34,rpipin35,rpipin36,rpipin37,rpipin38,rpipin39,rpipin40
