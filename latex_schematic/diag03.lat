@@ -1,0 +1,13 @@
+% file:  diag03.lat  -- from diag02.lat
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\tikzset{background rectangle/.style={fill=olive!20!white}}
+\usepackage{circuitikz}
+\begin{document}\begin{figure}[h!]\begin{center}
+  \begin{circuitikz}[scale=0.5,show background rectangle]
+    \input radios.lat
+    \input rpiheader.lat
+    \end{circuitikz}
+  \caption{A/D interface board between radios and RaspberryPi header}
+  \end{center}\end{figure}\end{document}

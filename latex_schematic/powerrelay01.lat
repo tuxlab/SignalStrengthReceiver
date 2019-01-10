@@ -1,0 +1,30 @@
+%  file: powerrelay01.lat  -- providing a relay to control A/D power (to be included in diag??.lat)
+    \draw                                                     % the relay
+      (17, 2) -- ++( 8,0) -- ++(0,4) -- ++( -8,0) -- cycle
+
+      (18, 5) node[short]         {A/D+5v} to node[anchor=north] (relayadv) {} (18, 7)
+      (20, 5) node[short]         {+5v}    to node[anchor=north] (relayp5v) {} (20, 7)
+      (23, 5) node[short]         {off}    to node[anchor=north] (relayoff) {} (23, 7)
+      (24, 5) node[short]         {on}     to node[anchor=north] (relayon)  {} (24, 7)
+
+      (18, 1)     [short,-o]               to node[anchor=east]      {unused}  (18, 3)
+      (20, 1)     [short,-o]               to node[anchor=south]     {unused}  (20, 3)
+      (23, 1) node[short,-o] (relayb1)  {} to node[anchor=east]      {relayb1} (23, 3)
+      (24, 1) node[short,-o] (relayb2)  {} to node[anchor=south]     {relayb2} (24, 3)
+      ;
+
+    \draw                                                     % the on-transistor and leads
+      (25,14)            node[npn,xscale=-1,anchor=south] (onnpn)        {}
+                         node                                            {$on$}
+      (onnpn.base)       node                             (onbase)       {}
+      (onnpn.collector)  node                             (oncollector)  {} 
+      (onnpn.emitter)    node                             (onemitter)    {}
+      ;
+
+    \draw                                                     % the off-transistor and leads
+      (24,24)            node[npn,xscale=-1,anchor=south] (offnpn)       {}
+                         node                                            {$off$}
+      (offnpn.base)      node[anchor=west ]               (offbase)      {}
+      (offnpn.collector) node[anchor=south]               (offcollector) {}
+      (offnpn.emitter)   node[anchor=north]               (offemitter)   {}
+      ;

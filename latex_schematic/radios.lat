@@ -1,0 +1,42 @@
+%  file: radios.lat  -- providing 3 connections each, for 5 radios (to be included in diag??.lat)
+    \draw
+              (0,32.3)     node[left] (r5volts)     {5v}                  % radio 5 strength
+                       to  [short,             o- ]  (2,32.3)
+              (0,31)       node[left] (r5reference) {5g}                  % radio 5 reference
+                       to  [short,             o- ]  (2,31)
+              (0,30)       node[left] (r5active)    {5a}                  % radio 5 active
+                       to  [short,             o- ]  (2,30)
+
+              (0,27.3)     node[left] (r4volts)     {4v}                  % radio 4 strength
+                       to  [short,             o- ]  (2,27.3)
+              (0,26)       node[left] (r4reference) {4g}                  % radio 4 reference
+                       to  [short,             o- ]  (2,26)
+              (0,25)       node[left] (r4active)    {4a}                  % radio 4 active
+                       to  [short,             o- ]  (2,25)
+
+              (0,22.3)     node[left] (r3volts)     {3v}                  % radio 3 strength
+                       to  [short,             o- ]  (2,22.3)
+              (0,21)       node[left] (r3reference) {3g}                  % radio 3 reference
+                       to  [short,             o- ]  (2,21)
+              (0,20)       node[left] (r3active)    {3a}                  % radio 3 active
+                       to  [short,             o- ]  (2,20)
+
+              (0,17.3)     node[left] (r2volts)     {2v}                  % radio 2 strength
+                       to  [short,             o- ]  (2,17.3)
+              (0,16)       node[left] (r2reference) {2g}                  % radio 2 reference
+                       to  [short,             o- ]  (2,16)
+              (0,15)       node[left] (r2active)    {2a}                  % radio 2 active
+                       to  [short,             o- ]  (2,15)
+
+              (0,12.3)     node[left] (r1volts)     {1v}                  % radio 1 strength
+                       to  [short,             o- ]  (2,12.3)
+              (0,11)       node[left] (r1reference) {1g}                  % radio 1 reference
+                       to  [short,             o- ]  (2,11)
+              (0,10)       node[left] (r1active)    {1a}                  % radio 1 active
+                       to  [short,             o- ]  (2,10)
+
+              (0, 7)       node[left] (a_d_power)   {0v}                  % A/D power +5v
+                       to  [short,             o- ]  (2, 7)
+              (0, 6)       node[left] (a_d_ground)  {0g}                  % A/D power GND
+                       to  [short,             o- ]  (2, 6)
+      ;

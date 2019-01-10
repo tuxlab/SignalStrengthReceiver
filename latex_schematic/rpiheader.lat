@@ -1,0 +1,142 @@
+%  file: rpiheader05.lat  -- providing 40 connections to the raspberry pi (to be included in diag??.lat)
+    \draw
+              (33,31) node[right] {1}                                 % rpipin01
+                      to  [short,o-] node[] (rpipin01) {} (32,31)
+
+              (35,31) node[right]    {2}                              % rpipin02
+                      to  [short,             o- ]         (35,30.5)
+                      to  [short,- ] node[] (rpipin02) {} (32,30.5)
+
+              (33,30) node[right]    {3}                              % rpipin03
+                      to  [short,o-] node[] (rpipin03) {} (32,30)
+
+              (35,30) node[right]    {4}                              % rpipin04
+                      to  [short,             o- ]  (35,29.5)
+                      to  [short,- ] node[] (rpipin04) {} (32,29.5)
+
+              (33,29) node[right]    {5}                              % rpipin05
+                      to  [short,o-] node[] (rpipin05) {} (32,29)
+
+              (35,29) node[right]    {6}                              % rpipin06
+                      to  [short,             o- ]  (35,28.5)
+                      to  [short,- ] node[] (rpipin06) {} (32,28.5)
+
+              (33,28) node[right]    {7}                              % rpipin07
+                      to  [short,o-] node[] (rpipin07) {} (32,28)
+
+              (35,28) node[right]    {8}                              % rpipin08
+                      to  [short,             o- ]  (35,27.5)
+                      to  [short,- ] node[] (rpipin08) {} (32,27.5)
+
+              (33,27) node[right]    {9}                              % rpipin09
+                      to  [short,o-] node[] (rpipin09) {} (32,27)
+
+              (35,27) node[right]   {10}                              % rpipin10
+                      to  [short,             o- ]  (35,26.5)
+                      to  [short,- ] node[] (rpipin10) {} (32,26.5)
+
+              (33,26) node[right]   {11}                              % rpipin11
+                      to  [short,o-] node[] (rpipin11) {} (32,26)
+
+              (35,26) node[right]   {12}                              % rpipin12
+                      to  [short,             o- ]  (35,25.5)
+                      to  [short,- ] node[] (rpipin12) {} (32,25.5)
+
+              (33,25) node[right]   {13}                              % rpipin13
+                      to  [short,o-] node[] (rpipin13) {} (32,25)
+
+              (35,25) node[right]   {14}                              % rpipin14
+                      to  [short,             o- ]  (35,24.5)
+                      to  [short,- ] node[] (rpipin14) {} (32,24.5)
+
+              (33,24) node[right]   {15}                              % rpipin15
+                      to  [short,o-] node[] (rpipin15) {} (32,24)
+
+              (35,24) node[right]   {16}                              % rpipin16
+                      to  [short,             o- ]  (35,23.5)
+                      to  [short,- ] node[] (rpipin16) {} (32,23.5)
+
+              (33,23) node[right]   {17}                              % rpipin17
+                      to  [short,o-] node[] (rpipin17) {} (32,23)
+
+              (35,23) node[right]   {18}                              % rpipin18
+                      to  [short,             o- ]  (35,22.5)
+                      to  [short,- ] node[] (rpipin18) {} (32,22.5)
+
+              (33,22) node[right]   {19}                              % rpipin19
+                      to  [short,o-] node[] (rpipin19) {} (32,22)
+
+              (35,22) node[right]   {20}                              % rpipin20
+                      to  [short,             o- ]  (35,21.5)
+                      to  [short,- ] node[] (rpipin20) {} (32,21.5)
+
+              (33,21) node[right] {21}                                % rpipin21
+                      to  [short,o-] node[] (rpipin21) {} (32,21)
+
+              (35,21) node[right]   {22}                              % rpipin22
+                      to  [short,             o- ]  (35,20.5)
+                      to  [short,- ] node[] (rpipin22) {} (32,20.5)
+
+              (33,20) node[right] {23}                                % rpipin23
+                      to  [short,o-] node[] (rpipin23) {} (32,20)
+
+              (35,20) node[right]   {24}                              % rpipin24
+                      to  [short,             o- ]  (35,19.5)
+                      to  [short,- ] node[] (rpipin24) {} (32,19.5)
+
+              (33,19) node[right]   {25}                              % rpipin25
+                      to  [short,o-] node[] (rpipin25) {} (32,19)
+
+              (35,19) node[right]   {26}                              % rpipin26
+                      to  [short,             o- ]  (35,18.5)
+                      to  [short,- ] node[] (rpipin26) {} (32,18.5)
+
+              (33,18) node[right]   {27}                              % rpipin27
+                      to  [short,o-] node[] (rpipin27) {} (32,18)
+
+              (35,18) node[right]   {28}                              % rpipin28
+                      to  [short,             o- ]  (35,17.5)
+                      to  [short,- ] node[] (rpipin28) {} (32,17.5)
+
+              (33,17) node[right]   {29}                              % rpipin29
+                      to  [short,o-] node[] (rpipin29) {} (32,17)
+
+              (35,17) node[right]   {30}                              % rpipin30
+                      to  [short,             o- ]  (35,16.5)
+                      to  [short,- ] node[] (rpipin30) {} (32,16.5)
+
+              (33,16) node[right]   {31}                              % rpipin31
+                      to  [short,o-] node[] (rpipin31) {} (32,16)
+
+              (35,16) node[right]   {32}                              % rpipin32
+                      to  [short,             o- ]  (35,15.5)
+                      to  [short,- ] node[] (rpipin32) {} (32,15.5)
+
+              (33,15) node[right]   {33}                              % rpipin33
+                      to  [short,o-] node[] (rpipin33) {} (32,15)
+
+              (35,15) node[right]   {34}                              % rpipin34
+                      to  [short,             o- ]  (35,14.5)
+                      to  [short,- ] node[] (rpipin34) {} (32,14.5)
+
+              (33,14) node[right]   {35}                              % rpipin35
+                      to  [short,o-] node[] (rpipin35) {} (32,14)
+
+              (35,14) node[right]   {36}                              % rpipin36
+                      to  [short,             o- ]  (35,13.5)
+                      to  [short,- ] node[] (rpipin36) {} (32,13.5)
+
+              (33,13) node[right]   {37}                              % rpipin37
+                      to  [short,o-] node[] (rpipin37) {} (32,13)
+
+              (35,13) node[right]   {38}                              % rpipin38
+                      to  [short,             o- ]  (35,12.5)
+                      to  [short,- ] node[] (rpipin38) {} (32,12.5)
+
+              (33,12) node[right]   {39}                              % rpipin39
+                      to  [short,o-] node[] (rpipin39) {} (32,12)
+
+              (35,12) node[right]   {40}                              % rpipin40
+                      to  [short,             o- ]  (35,11.5)
+                      to  [short,- ] node[] (rpipin40) {} (32,11.5)
+      ;

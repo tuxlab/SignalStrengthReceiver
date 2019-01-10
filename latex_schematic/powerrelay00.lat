@@ -1,0 +1,28 @@
+%  file: powerrelay.lat  -- providing a relay to control A/D power (to be included in diag??.lat)
+    \draw                                                     % the relay
+      (17, 6) -- ++( 8,0) -- ++(0,4) -- ++( -8,0) -- cycle
+
+      (18,11) [short, -o] to node[left]  (relayadv) {A/D+5v} (18,9)
+      (20,11) [short, -o] to node[below] (relayp5v) {+5v}    (20,9)
+      (23,11) [short, -o] to node[left]  (relayoff) {off}    (23,9)
+      (24,11) [short, -o] to node[below] (relayon)  {on}     (24,9)
+
+      (18, 5) [short, -o] to node[left]            {unused} (18, 7)
+      (20, 5) [short, -o] to node[above]           {unused} (20, 7)
+      (23, 5) [short, -o] to node[left]  (relayb1) {rpi2}   (23, 7)
+      (24, 5) [short, -o] to node[above] (relayb2) {rpi2}   (24, 7)
+      ;
+
+    \draw                                                     % the on-transistor and leads
+      (20,24)            node[npn         ] (onnpn)       {$on$}
+      (onnpn.base)       node[anchor=west ] (onbase)      {}
+      (onnpn.collector)  node[anchor=south] (oncollector) {} 
+      (onnpn.emitter)    node[anchor=north] (onemitter)   {}
+      ;
+
+    \draw                                                     % the off-transistor and leads
+      (20,16)            node[npn         ] (offnpn)       {$off$}
+      (offnpn.base)      node[anchor=west ] (offbase)      {}
+      (offnpn.collector) node[anchor=south] (offcollector) {}
+      (offnpn.emitter)   node[anchor=north] (offemitter)   {}
+      ;

@@ -1,0 +1,133 @@
+% file:  diag04.lat  -- from diag03.lat to add component includes
+
+\setlength{\voffset}{0mm}
+% {17.5mm}
+\setlength{\hoffset}{0mm}
+
+\documentclass[letterpaper]{article}
+% \usepackage{ifthen}
+\usepackage{fancyhdr}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\tikzset{background rectangle/.style={fill=olive!20!white}}
+\usepackage{circuitikz}
+
+\pagenumbering{arabic}
+% \nofiles
+
+\setlength{\textwidth}{\paperwidth}
+% \addtolength{\textwidth}{-1.5in}
+\addtolength{\textwidth}{-1in}
+
+\setlength{\topmargin}{-0.6in}
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{0.5in}
+% \setlength{\topskip}{0pt}
+
+\setlength{\textheight}{8.8in}
+% \setlength{\textheight}{\paperheight}
+% \addtolength{\textheight}{-2in}
+
+% \setlength{\oddsidemargin}{-0.35in}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{0pt}
+\setlength{\marginparwidth}{1in}
+\setlength{\marginparsep}{0pt}
+
+\setlength{\footskip}{30pt}
+\setlength{\parskip}{10pt}
+\setlength{\parindent}{0pt}
+
+% these can only be set in a \newenvironment
+% \setlength{\topsep}{0pt}
+% \setlength{\partopsep}{0pt}
+% \setlength{\parsep}{3pt}
+% \setlength{\itemsep}{3pt}
+% \setlength{\leftmargin}{}
+% \setlength{\rightmargin}{}
+% \setlength{\listparindent}{}
+% \setlength{\labelwidth}{}
+% \setlength{\labelsep}{}
+% \setlength{\itemindent}{}
+
+% \setlength{\footrulewidth}{.4pt}
+\renewcommand{\footrulewidth}{.4pt}
+
+% \pagestyle{empty}
+\pagestyle{fancy}
+
+% \lhead[even]{\footnotesize City of Los Angeles IT Agency}
+\lhead[even]{\footnotesize\textbf{5-Radio Signal-Strength Monitor}}
+\rhead[even]{\footnotesize John Kirk, City of Los Angeles IT Agency}
+\lfoot[even]{\footnotesize                                    November 15, 2018}
+\cfoot[even]{\footnotesize\textbf{Interface Board Schematic}}
+\rfoot[even]{\textbf{\small Page \thepage\ of 1}}
+
+\newenvironment{itemlist}{\begin{list}{$\bullet$}{
+  % these can only be set in a \newenvironment
+  \setlength{\topsep}{2pt}
+  \setlength{\partopsep}{0pt}
+  \setlength{\parsep}{4pt}
+  \setlength{\itemsep}{0pt}
+  \setlength{\leftmargin}{20pt}
+  % \setlength{\rightmargin}{0pt}
+  \setlength{\listparindent}{8pt}
+  % \setlength{\labelwidth}{0pt}
+  % \setlength{\labelsep}{0pt}
+  % \setlength{\itemindent}{0pt}
+  }}{\end{list}}
+
+% \newcommand{\subhead}[1]{{\setlength{\parindent}{0pt}
+%                           \bigskip\textbf{#1}\par}}
+\newcommand{\subhead}[1]{{\setlength{\parindent}{0pt}
+                          \textbf{#1}\quad --}}
+
+\newcommand{\subfoot}[1]{{\setlength{\parindent}{0pt}
+                          \medskip\footnotesize\textbf{#1}\par}}
+
+\renewcommand{\labelenumi}{\Roman{enumi}.}
+\renewcommand{\labelenumii}{\Alph{enumii}.}
+\newcounter{idxitm}
+\begin{document}
+%   \strut
+%   \vspace{-1.0in}
+%   \vspace{-0.8in}
+\strut\bigskip\centerline{\large\bf Schematic for A/D Board to Interface Radios to Raspberry Pi}
+% \strut\vspace{-0.1in}
+% \newpage\strut\vspace{-0.7in}
+% \newpage
+%
+%   \strut\bigskip
+% \vspace{-1ex}
+
+\begin{figure}[h!]\begin{center}
+  \begin{circuitikz}[scale=0.5,show background rectangle]
+    \input radios.lat
+    \input rpiheader.lat
+    \input powerrelay.lat
+    \input a-d_converters.lat
+    \input connections.lat
+    \end{circuitikz}
+  \caption{A/D interface board between radios and RaspberryPi header}
+  \end{center}\end{figure}
+\bigskip
+
+  We plan to etch a circuit board to attach to the GPIO header on the Raspberry Pi computer,
+which will convert analog signal strength voltages coming from the radios to digital values.
+
+  The first stage of this project is to document an authoritative circuit schematic diagram
+for the board.  We plan to then use the open-source KiCad software to layout the etched board,
+from which the board can be produced.
+
+  The components for this circuit board, other than headers for the incoming radio signals and
+the A/D and relay power, are:
+
+     1 Latching Relay      HFE8-5-1HD-L2
+     1 RPi                 Raspberry Pi 2 Model B V1.1 (/copyright 2014)
+     4 A/D converters      ADC0831CCN  National Semiconductor  (also Texas Instruments)
+     2 npn transistors     PN2222
+     2 resistors @1KOhm    (for the transistors)
+     5 resistors @10KOhm   (for the A/D converters)
+
+\end{document}
