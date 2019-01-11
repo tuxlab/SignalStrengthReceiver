@@ -369,9 +369,9 @@ Wire Wire Line
 Wire Wire Line
 	9845 5420 9845 5490
 Text GLabel 9225 3920 1    50   Input ~ 0
-+5V
+Rpi_5V
 Text GLabel 9325 3920 1    50   Input ~ 0
-+5V
+Rpi_5V
 Wire Wire Line
 	9225 3920 9225 3990
 Wire Wire Line
@@ -816,4 +816,10 @@ F 3 "~" H 9325 5935 50  0001 C CNN
 $EndComp
 NoConn ~ 8925 4790
 NoConn ~ 8925 3985
+Text GLabel 9150 685  0    50   Input ~ 0
+Rpi_5V
+Wire Wire Line
+	9150 685  9300 685 
+Wire Wire Line
+	9300 685  9300 720 
 $EndSCHEMATC
