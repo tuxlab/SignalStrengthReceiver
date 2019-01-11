@@ -326,36 +326,10 @@ F 3 "" H 9075 4390 50  0001 C CNN
 	1    9075 4390
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NPN_ECB Q?
-U 1 1 5BEA9CF5
-P 9945 5220
-F 0 "Q?" H 10135 5174 50  0000 L CNN
-F 1 "Q_NPN_ECB" H 10135 5265 50  0000 L CNN
-F 2 "" H 10145 5320 50  0001 C CNN
-F 3 "~" H 9945 5220 50  0001 C CNN
-	1    9945 5220
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Q_NPN_ECB Q?
-U 1 1 5BEA9E34
-P 9325 5935
-F 0 "Q?" H 9515 5889 50  0000 L CNN
-F 1 "Q_NPN_ECB" H 9515 5980 50  0000 L CNN
-F 2 "" H 9525 6035 50  0001 C CNN
-F 3 "~" H 9325 5935 50  0001 C CNN
-	1    9325 5935
-	-1   0    0    1   
-$EndComp
 Text GLabel 8825 3920 1    50   Input ~ 0
-+5V
-Text GLabel 8925 3920 1    50   Input ~ 0
 +5V
 Wire Wire Line
 	8825 3920 8825 3990
-Wire Wire Line
-	8925 3920 8925 3990
 Text GLabel 8825 4890 3    50   Input ~ 0
 Vcc
 Wire Wire Line
@@ -790,4 +764,56 @@ Text GLabel 10440 2320 2    50   Input ~ 0
 Off
 Wire Wire Line
 	10440 2320 10300 2320
+Text GLabel 8570 1620 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	8700 1620 8570 1620
+Text GLabel 8570 1520 0    50   Input ~ 0
+CS
+Wire Wire Line
+	8700 1520 8570 1520
+Text GLabel 10440 1420 2    50   Input ~ 0
+DO2
+Wire Wire Line
+	10300 1420 10440 1420
+Text GLabel 10440 1520 2    50   Input ~ 0
+DO3
+Wire Wire Line
+	10440 1520 10300 1520
+Text GLabel 10440 1720 2    50   Input ~ 0
+DO4
+Wire Wire Line
+	10440 1720 10300 1720
+Text GLabel 10440 1820 2    50   Input ~ 0
+DO5
+Wire Wire Line
+	10440 1820 10300 1820
+Text GLabel 8570 2620 0    50   Input ~ 0
+DO1
+Wire Wire Line
+	8700 2620 8570 2620
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5C3B763A
+P 9945 5220
+F 0 "Q?" H 10135 5266 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 10135 5175 50  0000 L CNN
+F 2 "" H 10145 5320 50  0001 C CNN
+F 3 "~" H 9945 5220 50  0001 C CNN
+	1    9945 5220
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5C3BCCD4
+P 9325 5935
+F 0 "Q?" H 9515 5981 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 9515 5890 50  0000 L CNN
+F 2 "" H 9525 6035 50  0001 C CNN
+F 3 "~" H 9325 5935 50  0001 C CNN
+	1    9325 5935
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 8925 4790
+NoConn ~ 8925 3985
 $EndSCHEMATC

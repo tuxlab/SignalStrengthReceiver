@@ -326,28 +326,6 @@ F 3 "" H 9075 4390 50  0001 C CNN
 	1    9075 4390
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Q_NPN_ECB Q?
-U 1 1 5BEA9CF5
-P 9945 5220
-F 0 "Q?" H 10135 5174 50  0000 L CNN
-F 1 "Q_NPN_ECB" H 10135 5265 50  0000 L CNN
-F 2 "" H 10145 5320 50  0001 C CNN
-F 3 "~" H 9945 5220 50  0001 C CNN
-	1    9945 5220
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Q_NPN_ECB Q?
-U 1 1 5BEA9E34
-P 9325 5935
-F 0 "Q?" H 9515 5889 50  0000 L CNN
-F 1 "Q_NPN_ECB" H 9515 5980 50  0000 L CNN
-F 2 "" H 9525 6035 50  0001 C CNN
-F 3 "~" H 9325 5935 50  0001 C CNN
-	1    9325 5935
-	-1   0    0    1   
-$EndComp
 Text GLabel 8825 3920 1    50   Input ~ 0
 +5V
 Text GLabel 8925 3920 1    50   Input ~ 0
@@ -487,12 +465,12 @@ Wire Wire Line
 $Comp
 L Connector:Raspberry_Pi_2_3 J?
 U 1 1 5BF5790E
-P 9875 2030
-F 0 "J?" H 9875 3508 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 9875 3417 50  0000 C CNN
-F 2 "" H 9875 2030 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9875 2030 50  0001 C CNN
-	1    9875 2030
+P 9500 2020
+F 0 "J?" H 9500 3498 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 9500 3407 50  0000 C CNN
+F 2 "" H 9500 2020 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 9500 2020 50  0001 C CNN
+	1    9500 2020
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -510,10 +488,10 @@ F 3 "" H 2720 1690 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2720 1640 2720 1690
-Text GLabel 8945 1430 0    50   Input ~ 0
-Radio1Active
+Text GLabel 8570 1420 0    50   Input ~ 0
+Radio5Active
 Wire Wire Line
-	9075 1430 8945 1430
+	8700 1420 8570 1420
 $Comp
 L Connector:Conn_01x03_Male J?
 U 1 1 5BF6949E
@@ -582,14 +560,14 @@ L Connector:Conn_01x03_Male J?
 U 1 1 5BF6C07B
 P 2135 3455
 F 0 "J?" H 2241 3733 50  0000 C CNN
-F 1 "Radio1" H 2200 3285 50  0000 C CNN
+F 1 "Radio3" H 2200 3285 50  0000 C CNN
 F 2 "" H 2135 3455 50  0001 C CNN
 F 3 "~" H 2135 3455 50  0001 C CNN
 	1    2135 3455
 	1    0    0    -1  
 $EndComp
 Text GLabel 2570 3355 2    50   Input ~ 0
-Radio1in
+Radio3in
 Wire Wire Line
 	2335 3355 2570 3355
 $Comp
@@ -619,7 +597,7 @@ F 3 "~" H 2720 3670 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2970 3455 2    50   Input ~ 0
-Radio1Active
+Radio3Active
 Wire Wire Line
 	2335 3455 2720 3455
 Wire Wire Line
@@ -645,14 +623,14 @@ L Connector:Conn_01x03_Male J?
 U 1 1 5BF6C09D
 P 2115 4600
 F 0 "J?" H 2221 4878 50  0000 C CNN
-F 1 "Radio2" H 2180 4430 50  0000 C CNN
+F 1 "Radio4" H 2180 4430 50  0000 C CNN
 F 2 "" H 2115 4600 50  0001 C CNN
 F 3 "~" H 2115 4600 50  0001 C CNN
 	1    2115 4600
 	1    0    0    -1  
 $EndComp
 Text GLabel 2550 4500 2    50   Input ~ 0
-Radio2in
+Radio4in
 Wire Wire Line
 	2315 4500 2550 4500
 $Comp
@@ -682,7 +660,7 @@ F 3 "~" H 2700 4815 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2950 4600 2    50   Input ~ 0
-Radio2Active
+Radio4Active
 Wire Wire Line
 	2315 4600 2700 4600
 Wire Wire Line
@@ -708,14 +686,14 @@ L Connector:Conn_01x03_Male J?
 U 1 1 5BF73B2E
 P 2120 5665
 F 0 "J?" H 2226 5943 50  0000 C CNN
-F 1 "Radio2" H 2185 5495 50  0000 C CNN
+F 1 "Radio5" H 2185 5495 50  0000 C CNN
 F 2 "" H 2120 5665 50  0001 C CNN
 F 3 "~" H 2120 5665 50  0001 C CNN
 	1    2120 5665
 	1    0    0    -1  
 $EndComp
 Text GLabel 2555 5565 2    50   Input ~ 0
-Radio2in
+Radio5in
 Wire Wire Line
 	2320 5565 2555 5565
 $Comp
@@ -745,7 +723,7 @@ F 3 "~" H 2705 5880 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2955 5665 2    50   Input ~ 0
-Radio2Active
+Radio5Active
 Wire Wire Line
 	2320 5665 2705 5665
 Wire Wire Line
@@ -766,4 +744,78 @@ F 3 "" H 2705 6080 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2705 6030 2705 6080
+Text GLabel 10435 2220 2    50   Input ~ 0
+Radio4Active
+Wire Wire Line
+	10300 2220 10435 2220
+Text GLabel 10440 2120 2    50   Input ~ 0
+Radio3Active
+Wire Wire Line
+	10440 2120 10300 2120
+Text GLabel 8560 1220 0    50   Input ~ 0
+Radio2Active
+Wire Wire Line
+	8700 1220 8560 1220
+Text GLabel 8560 1120 0    50   Input ~ 0
+Radio1Active
+Wire Wire Line
+	8700 1120 8560 1120
+Text GLabel 10440 2520 2    50   Input ~ 0
+On
+Wire Wire Line
+	10300 2520 10440 2520
+Text GLabel 10440 2320 2    50   Input ~ 0
+Off
+Wire Wire Line
+	10440 2320 10300 2320
+Text GLabel 8570 1620 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	8700 1620 8570 1620
+Text GLabel 8570 1520 0    50   Input ~ 0
+CS
+Wire Wire Line
+	8700 1520 8570 1520
+Text GLabel 10440 1420 2    50   Input ~ 0
+DO2
+Wire Wire Line
+	10300 1420 10440 1420
+Text GLabel 10440 1520 2    50   Input ~ 0
+DO3
+Wire Wire Line
+	10440 1520 10300 1520
+Text GLabel 10440 1720 2    50   Input ~ 0
+DO4
+Wire Wire Line
+	10440 1720 10300 1720
+Text GLabel 10440 1820 2    50   Input ~ 0
+DO5
+Wire Wire Line
+	10440 1820 10300 1820
+Text GLabel 8570 2620 0    50   Input ~ 0
+DO1
+Wire Wire Line
+	8700 2620 8570 2620
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5C3B763A
+P 9945 5220
+F 0 "Q?" H 10135 5266 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 10135 5175 50  0000 L CNN
+F 2 "" H 10145 5320 50  0001 C CNN
+F 3 "~" H 9945 5220 50  0001 C CNN
+	1    9945 5220
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5C3BCCD4
+P 9325 5935
+F 0 "Q?" H 9515 5981 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 9515 5890 50  0000 L CNN
+F 2 "" H 9525 6035 50  0001 C CNN
+F 3 "~" H 9325 5935 50  0001 C CNN
+	1    9325 5935
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

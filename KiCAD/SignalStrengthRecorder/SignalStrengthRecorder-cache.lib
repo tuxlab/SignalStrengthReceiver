@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x03_Male
+# Connector:Conn_01x03_Male
 #
-DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
+DEF Connector:Conn_01x03_Male J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
+F1 "Connector:Conn_01x03_Male" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -24,11 +24,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Raspberry_Pi_2_3
+# Connector:Raspberry_Pi_2_3
 #
-DEF Connector_Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
+DEF Connector:Raspberry_Pi_2_3 J 0 40 Y Y 1 F N
 F0 "J" -700 1250 50 H V L BNN
-F1 "Connector_Raspberry_Pi_2_3" 400 -1250 50 H V L TNN
+F1 "Connector:Raspberry_Pi_2_3" 400 -1250 50 H V L TNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -120,11 +120,11 @@ X GND 9 -300 -1300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# Device_Q_NPN_ECB
+# Device:Q_NPN_EBC
 #
-DEF Device_Q_NPN_ECB Q 0 0 Y N 1 F N
+DEF Device:Q_NPN_EBC Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Device_Q_NPN_ECB" 200 -50 50 H V L CNN
+F1 "Device:Q_NPN_EBC" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -134,16 +134,16 @@ P 3 0 1 0 25 -25 100 -100 100 -100 N
 P 3 0 1 20 25 75 25 -75 25 -75 N
 P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
 X E 1 100 -200 100 U 50 50 1 1 P
-X C 2 100 200 100 D 50 50 1 1 P
-X B 3 -200 0 225 R 50 50 1 1 P
+X B 2 -200 0 225 R 50 50 1 1 P
+X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R
+# Device:R
 #
-DEF Device_R R 0 0 N Y 1 F N
+DEF Device:R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
+F1 "Device:R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -156,11 +156,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SignalStrengthRecorder-rescue_ADC0831-2CH-SignalStrengthRecorder
+# SignalStrengthRecorder-rescue:ADC0831-2CH-SignalStrengthRecorder
 #
-DEF SignalStrengthRecorder-rescue_ADC0831-2CH-SignalStrengthRecorder U 0 40 Y Y 1 F N
+DEF SignalStrengthRecorder-rescue:ADC0831-2CH-SignalStrengthRecorder U 0 40 Y Y 1 F N
 F0 "U" 0 -400 50 H V C CNN
-F1 "SignalStrengthRecorder-rescue_ADC0831-2CH-SignalStrengthRecorder" 0 400 50 H V C CNN
+F1 "SignalStrengthRecorder-rescue:ADC0831-2CH-SignalStrengthRecorder" 0 400 50 H V C CNN
 F2 "" -50 0 50 H I C CNN
 F3 "" -50 0 50 H I C CNN
 DRAW
@@ -182,11 +182,11 @@ X NC 9 450 -200 200 L 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
-# SignalStrengthRecorder-rescue_HFE8-SignalStrengthRecorder
+# SignalStrengthRecorder-rescue:HFE8-SignalStrengthRecorder
 #
-DEF SignalStrengthRecorder-rescue_HFE8-SignalStrengthRecorder K 0 40 Y Y 1 F N
+DEF SignalStrengthRecorder-rescue:HFE8-SignalStrengthRecorder K 0 40 Y Y 1 F N
 F0 "K" 0 -300 50 H V C CNN
-F1 "SignalStrengthRecorder-rescue_HFE8-SignalStrengthRecorder" 0 300 50 H V C CNN
+F1 "SignalStrengthRecorder-rescue:HFE8-SignalStrengthRecorder" 0 300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -206,11 +206,11 @@ X ~ ~ -150 400 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
